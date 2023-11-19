@@ -1,25 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <title>Document</title>
+    <center><u><h1>Form</u></h1></center>
+        <style>
+            input#name:invalid:focus{
+                border:1px solid red;
+            }
+            input#email:invalid:focus{
+                border:1px solid red;
+            }
+            .button:hover{opacity: 1;}
+            .button{
+                padding:16px 32px;
+                background-color:#f4511e;
+                color:white;
+                font-size: 16px;
+                display: inline-block;
+                opacity: 0.6;
+                transition: 0.3s;
+                cursor:pointer;
+                margin-right: 180px;
+            }
+        </style>
 </head>
 <body>
     <center>
-        <h1 style="background-color: chartreuse;"><b>HYDERABAD</b></h1>
-        <h2>Hyderabad is known as the City of Pearls</h2>
-        <img style="width: 600px; height: 300px;" src="./BOOTSTRAP/images/hyd.webp" alt="">
-    </center>
-    
-    
-    <p>There are many tourist places </p>
-    <p style="color: firebrick;">ARE YOU EXCITED...</p>
-    <h3>CHARMINAR</h3>
-    <img style="width: 600px; height: 300px;" src="./BOOTSTRAP/images/hyd.jpeg" alt="">
-    <h4>GOLCONDA FORT</h4>
-    <img style="width: 600px; height: 300px;" src="./BOOTSTRAP/images/gol.jpg" alt="">
+        <form id = "user-form">
+            <label for="name" style="margin-right: 50px;">Name*</label>
+            <input style="margin-left: 50px;" type = "text" id = "name" name = "name" autocomplete="test"><br>
+
+            <label for="email" style="margin-right: 50px;">Email*</label>
+            <input style="margin-left: 50px;" "text" id = "email" name = "email" autocomplete="test@gmail.com"><br>
+
+            <label for="password" style="margin-right: 50px;">Password*</label>
+            <input style="margin-left: 25px;" type = "text" id = "password" name = "password" autocomplete="test123"><br>
+
+            <label for="dob" style="margin-right: 70px;">Date of birth*</label>
+            <input style="margin-left: 25px;" type = "date" id = "dob" name = "dob" autocomplete="2010-10-10"><br>
+
+            <input type="checkbox" id="acceptTerms" name = "acceptTerms" autocomplete="off">
+            <label for="acceptTerms" style="margin-right: 105px;">Accept Terms & Conditions</label><br>
+
+            <br>
+            <button class = "button" type="submit">Submit</button>
+
+        </form>
+        <border>
+            <div class = "mx-auto">
+                <h2>Entries</h2>
+                <div class="text-3xl leading-tight font-bold text-center"id = "user-entries">
+                </div>
+            </div>
+            <table border="2px">
+                <tr>
+                    <th>name</th>
+                    <th>email</th>
+                    <th>password</th>
+                    <th>dob</th>
+                    <th>acceptedTermsandCondition</th>
+                </tr>
+                <tr>
+                    <td>Jane Doe</td>
+                    <td>jane@doe@gmail.com</td>
+                    <td>hellotere</td>
+                    <td>2000-02-01</td>
+                    <td>false</td>
+                </tr>
+                
+            </table>
+        </center>
+        </border>
+
+    <!--Script-->
+
+<script src="./index.js"></script>
 </body>
 </html>
-
